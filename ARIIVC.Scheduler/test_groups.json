@@ -1,0 +1,75 @@
+﻿[
+	{
+		"name" : "nightly",
+		"subgroups" :[ 
+						{
+							"name": "set1", 
+							"eta" : "15",
+							"tests" :	[
+											{"submodule": "VS_Specification","module":"Vehicles","runconfig":"Core","sequential": true,"chunksize":5,"subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "VM_BPO","module":"Vehicles","runconfig":"Core","sequential": false, "chunksize":13, "subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com"},
+											{"submodule": "VM_BSO", "module":"Vehicles","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "VM_Shipments","module":"Vehicles","runconfig":"Core","sequential": false,"chunksize":8,"subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com" },											
+											{"submodule": "ACC_SA_Purchaseledger","module":"IVC Job Maps","runconfig":"Core","sequential": true,"chunksize":1,"subscribers":"Brahmaji.Vanka@cdk.com;Naynitha.Mane@cdk.com;Pavan.Nagireddy@cdk.com;Ankita.Tiwari@cdk.com;Prashanthi.Puchala@cdk.com;Narsingsingh.Rajput@cdk.com" },
+											{"submodule": "ACC_SA_SalesLedger","module":"IVC Job Maps","runconfig":"Core","sequential": true,"chunksize":1,"subscribers":"Brahmaji.Vanka@cdk.com;Naynitha.Mane@cdk.com;Pavan.Nagireddy@cdk.com;Ankita.Tiwari@cdk.com;Prashanthi.Puchala@cdk.com;Narsingsingh.Rajput@cdk.com" },
+											{"submodule": "ACC_SA_Accrual", "module":"Accounts","runconfig":"Core","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com"},
+											{"submodule": "ACC_SA_Asset","module":"Accounts","runconfig":"Core","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "ACC_SA_NominalLedger","module":"Accounts","runconfig":"Core","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "CRM_Complaints","module":"CRM","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Priyanka.Loyapalli@cdk.com;Kiran.Karre@cdk.com"  },
+											{"submodule": "CRM_Misc","module":"CRM","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Priyanka.Loyapalli@cdk.com;Kiran.Karre@cdk.com"  },
+											{"submodule": "CRM_Survey","module":"CRM","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Priyanka.Loyapalli@cdk.com;Kiran.Karre@cdk.com"  },
+											{"submodule": "POS_Workshop_Loading","module":"Aftersales","runconfig":"Core","sequential": false, "chunksize":10,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "CRM_Campaigns","module":"CRM","runconfig":"Core","sequential": false,"chunksize":10,"subscribers":"Priyanka.Loyapalli@cdk.com;Kiran.Karre@cdk.com"  },
+											{"submodule": "POS_Stock_Checking","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "POS_Purchase_Control","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com"},
+											{"submodule": "POS_Service_VHC","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "Environments.SU","module":"Environments","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "VM_Showroom","module":"Vehicles","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com" }
+										]},
+						{	
+							"name": "set2", 
+							"eta" : "15", 
+							"tests" :	[
+											{"submodule": "VM_VehicleManagement","module":"Vehicles","runconfig":"Core","sequential": false,"chunksize":5, "subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com"},
+											{"submodule": "POS_Parts","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "CRM_Core", "module":"CRM","runconfig":"Core","sequential": false,"chunksize":10,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "VM_Finance","module":"Vehicles","runconfig":"Core","sequential": true,"chunksize":5,"subscribers":"Sai.Atmakuru@cdk.com;Simanta.Muduli@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "POS_Service_Jobmaps","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com;Naynitha.Mane@cdk.com" },
+											{"submodule": "ACC_IA_AccountsPayable","module":"Accounts","runconfig":"IA","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "CRM_InboundOutBoundManualCalls","module":"CRM","runconfig":"Core","sequential": false,"chunksize":10,"subscribers":"Priyanka.Loyapalli@cdk.com;Kiran.Karre@cdk.com" }
+										]
+						},
+						{ 
+							"name": "set3",
+							"eta" : "15", 
+							"tests" :	[
+											{"submodule": "POS_Service","module":"Aftersales","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Akash.Sahu@cdk.com;Kiran.Karre@cdk.com;Naynitha.Mane@cdk.com" },
+											{"submodule": "ACC_IA_GeneralLedgerCashbook","module":"Accounts","runconfig":"IA","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+						  					{"submodule": "IA.Core","module":"CRM","runconfig":"IA","sequential": false,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "ACC_IA_Assetledger","module":"Accounts","runconfig":"IA","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "ACC_IA_GeneralLedger","module":"Accounts","runconfig":"IA","sequential": false,"chunksize":20,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "ACC_IA_AccountsReceivable","module":"Accounts","runconfig":"IA","sequential": false,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "IA.SPOS","module":"Aftersales","runconfig":"IA","sequential": true,"chunksize":5, "subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com"},
+											{"submodule": "IA.BO","module":"Vehicles","runconfig":"IA","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" },
+											{"submodule": "IA.FO","module":"Vehicles","runconfig":"IA","sequential": true,"chunksize":5,"subscribers":"AkhileshVarma.Gadiraju@cdk.com;Kiran.Karre@cdk.com" }
+										]
+						}
+					]
+	},
+
+	{	
+		"name" : "jobmaps",	
+		"subgroups" :[ 
+						{
+							"name" : "set1", 
+							"eta" : "15",
+							"tests" :	[
+											{"submodule": "CRM_Campaigns","module":"IVC Job Maps","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Brahmaji.Vanka@cdk.com;Naynitha.Mane@cdk.com;Pavan.Nagireddy@cdk.com;Ankita.Tiwari@cdk.com;Prashanthi.Puchala@cdk.com;Narsingsingh.Rajput@cdk.com" },
+											{"submodule": "CRM_InboundOutBoundManualCalls","module":"IVC Job Maps","runconfig":"Core","sequential": false,"chunksize":5,"subscribers":"Brahmaji.Vanka@cdk.com;Naynitha.Mane@cdk.com;Pavan.Nagireddy@cdk.com;Ankita.Tiwari@cdk.com;Prashanthi.Puchala@cdk.com;Narsingsingh.Rajput@cdk.com" },
+											{"submodule": "CRM_Core", "module":"IVC Job Maps","runconfig":"Core","sequential": false,"chunksize":10,"subscribers":"Brahmaji.Vanka@cdk.com;Naynitha.Mane@cdk.com;Pavan.Nagireddy@cdk.com;Ankita.Tiwari@cdk.com;Prashanthi.Puchala@cdk.com;Narsingsingh.Rajput@cdk.com" }
+										]
+						}
+					]
+	} 							
+
+]

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C907083-6A5B-4254-9637-3D0AD295C2FE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARIIVC.Scheduler</RootNamespace>
+    <AssemblyName>ARIIVC.Scheduler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>IVCScheduler.Scheduler</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommandLine, Version=2.0.275.0, Culture=neutral, PublicKeyToken=de6f01bd326f8c32, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.2.1.1-beta\lib\net45\CommandLine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\MongoDB.Bson.signed.2.4.3\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\MongoDB.Driver.signed.2.4.3\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\packages\MongoDB.Driver.Core.signed.2.4.3\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libraries\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JsonReps\IvcTriggerInfo.cs" />
+    <Compile Include="JsonReps\RingReleaseInfo.cs" />
+    <Compile Include="JsonReps\Subscribers.cs" />
+    <Compile Include="mongoapi\AssociatedRuns.cs" />
+    <Compile Include="mongoapi\CustomerSiteConfig.cs" />
+    <Compile Include="DashboardConnector.cs" />
+    <Compile Include="JsonReps\FeatureInfo.cs" />
+    <Compile Include="Jenkins.cs" />
+    <Compile Include="Jira.cs" />
+    <Compile Include="JsonReps\MachineDetails.cs" />
+    <Compile Include="JsonReps\CsdtSchedule.cs" />
+    <Compile Include="JsonReps\CustomerDetails.cs" />
+    <Compile Include="JsonReps\CustomerEnvDetails.cs" />
+    <Compile Include="JsonReps\EsPost.cs" />
+    <Compile Include="JsonReps\EsRest.cs" />
+    <Compile Include="JsonReps\IvcAppServer_old.cs" />
+    <Compile Include="JsonReps\IvcAssociatedRuns.cs" />
+    <Compile Include="JsonReps\IvcPackDetails.cs" />
+    <Compile Include="JsonReps\IvcRecentReleases.cs" />
+    <Compile Include="JsonReps\IvcTestResults.cs" />
+    <Compile Include="JsonReps\JenkinsNode.cs" />
+    <Compile Include="JsonReps\JenkinsNodes.cs" />
+    <Compile Include="JsonReps\machineallocation.cs" />
+    <Compile Include="JsonReps\ProdHosts.cs" />
+    <Compile Include="JsonReps\ProductFeatureTab.cs" />
+    <Compile Include="JsonReps\ProductFeature.cs" />
+    <Compile Include="JsonReps\ReleaseInformation.cs" />
+    <Compile Include="JsonReps\ReleaseScheduler.cs" />
+    <Compile Include="JsonReps\ScheduledList.cs" />
+    <Compile Include="JsonReps\ScheduledTestInformation.cs" />
+    <Compile Include="JsonReps\SingleTest.cs" />
+    <Compile Include="JsonReps\TestPackInformation.cs" />
+    <Compile Include="JsonReps\TestPacket.cs" />
+    <Compile Include="JsonReps\TestSuite.cs" />
+    <Compile Include="mongoapi\AppServers.cs" />
+    <Compile Include="mongoapi\MongoDB.cs" />
+    <Compile Include="mongoapi\Trigger_Information.cs" />
+    <Compile Include="mongoapi\ZephyrTests.cs" />
+    <Compile Include="mongoapi\Releases.cs" />
+    <Compile Include="mongoapi\Results.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="mongoapi\ProductFeatureData.cs" />
+    <Compile Include="RingAdmin.cs" />
+    <Compile Include="mongoapi\SchedulerLogger.cs" />
+    <Compile Include="Scheduler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\LoggerTests.cs" />
+    <Compile Include="Tests\NotificationTests.cs" />
+    <Compile Include="Tests\SchedulerTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildVerificationScripts.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CheckReleasePacks.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="FrcSubscribers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="MachineDetails.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="machineallocation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="runconfiguration.properties">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="test_groups.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARIIVC.Logger\ARIIVC.Logger.csproj">
+      <Project>{0A21A250-A8FD-457C-8C34-83423B342F76}</Project>
+      <Name>ARIIVC.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ARIIVC.Utilities\ARIIVC.Utilities.csproj">
+      <Project>{c412fbc1-00c9-4e3a-b610-9f744e37875f}</Project>
+      <Name>ARIIVC.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ARIIVC.ZephyrAPI\ARIIVC.ZephyrAPI.csproj">
+      <Project>{228b5aa6-7446-4f83-9a58-e2098829e3f1}</Project>
+      <Name>ARIIVC.ZephyrAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

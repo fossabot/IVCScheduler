@@ -1,0 +1,23 @@
+﻿[
+  {
+    "module": "Aftersales",
+    "machines": 24
+  },
+  {
+    "module": "CRM",
+    "machines": 22
+  },
+  {
+    "module": "Vehicles",
+    "machines": 33
+  },
+  {
+    "module": "Accounts",
+    "machines": 23
+  },
+  {
+    "module": "Environment",
+    "machines": 3
+  }
+
+]

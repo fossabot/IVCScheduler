@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ARIIVC.ZephyrAPI</id>
+    <version>3.999.999</version>
+    <title>ARIIVC.ZephyrAPI</title>
+    <authors>ARIVC</authors>
+    <owners>ARIIVC</owners>
+    <projectUrl>http://stash.cdk.com/projects/ARI/repos/ariivc.framework</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ARIIVC.ZephyrAPI</description>
+    <copyright>Copyright © 2017</copyright>
+    <tags>ARIIVC</tags>
+  </metadata>
+  <files>
+    <file src="..\output\ARIIVC.ZephyrAPI.dll" target="lib\net45" />
+    <file src="..\output\ARIIVC.ZephyrAPI.pdb" target="lib\net45" />
+  </files>
+</package>

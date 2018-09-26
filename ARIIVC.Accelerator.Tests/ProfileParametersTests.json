@@ -1,0 +1,23 @@
+﻿[
+  {
+    "mongoUrl": "mongodb://c05drddrv969.dslab.ad.adp.com:27017",
+    "mountPoint": "c05drddrv89.dslab.ad.adp.com///opt/data/jk/profiler/unitTests",
+    "user": "ivc",
+    "password": "ivc123",
+    "version": "MT"
+  },
+  {
+    "mongoUrl": "mongodb://c05drddrv969.dslab.ad.adp.com:27017",
+    "mountPoint": "c05drddrv89.dslab.ad.adp.com///opt/data/jk/profiler/unitTests",
+    "user": "ivc",
+    "password": "ivc123",
+    "version": "LIVE"
+  },
+  {
+    "mongoUrl": "mongodb://c05drddrv969.dslab.ad.adp.com:27017",
+    "mountPoint": "c05drddrv89.dslab.ad.adp.com///opt/data/jk/profiler/unitTests",
+    "user": "ivc",
+    "password": "ivc123",
+    "version": "PILOT"
+  }
+]

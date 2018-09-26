@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ARIIVC.Logger</id>
+    <version>3.999.999</version>
+    <title>ARIIVC.Logger</title>
+    <authors>ARIVC</authors>
+    <owners>ARIIVC</owners>
+    <projectUrl>http://stash.cdk.com/projects/ARI/repos/ariivc.scheduler</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ARIIVC.Logger</description>
+    <copyright>Copyright © 2017</copyright>
+    <tags>ARIIVC</tags>
+  </metadata>
+  <files>
+    <file src="..\output\testdata\DrivePackDetailsAndCredentialsStore.json" target="testdata" />
+    <file src="..\output\ARIIVC.Logger.dll" target="lib\net45" />
+    <file src="..\output\ARIIVC.Logger.pdb" target="lib\net45" />
+  </files>
+</package>

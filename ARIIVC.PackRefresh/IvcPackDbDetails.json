@@ -1,0 +1,187 @@
+﻿[
+  {
+    "pack": "MT",
+    "config": "SA",
+    "master": {
+      "server": "gbhpivcmt01",
+      "servicename": "MT-MASTER-09-028001T",
+      "pdbname": "DB028001"
+    },
+    "workers": [
+      {
+        "server": "gbhpivcmt02",
+        "servicename": "MT-APP-02-028003T",
+        "pdbname": "DB028003"
+      },
+      {
+        "server": "gbhpivcmt03",
+        "servicename": "MT-APP-03-028005T",
+        "pdbname": "DB028005"
+      },
+      {
+        "server": "gbhpivcmt04",
+        "servicename": "MT-APP-04-028007T",
+        "pdbname": "DB028007"
+      },
+      {
+        "server": "d-ivc-mt-app01",
+        "servicename": "MT-APP-01-026824T",
+        "pdbname": "DB026824"
+      },
+      {
+        "server": "d-ivc-mt-app02",
+        "servicename": "MT-APP-02-027304T",
+        "pdbname": "DB027304"
+      },
+      {
+        "server": "d-ivc-mt-app03",
+        "servicename": "MT-APP-03-027306T",
+        "pdbname": "DB027306"
+      }
+
+    ]
+  },
+  {
+    "pack": "MT",
+    "config": "IA",
+    "master": {
+      "server": "ia-ivc-mt-master01",
+      "servicename": "IA-MT-MASTER-10-027953T",
+      "pdbname": "DB027953"
+    },
+    "workers": [
+      {
+        "server": "ia-ivc-mt-app01",
+        "servicename": "IA-IVC-MT-APP01-028935T",
+        "pdbname": "DB028935"
+      },
+      {
+        "server": "ia-ivc-mt-app02",
+        "servicename": "IA-IVC-MT-APP02-028937T",
+        "pdbname": "DB028937"
+      },
+      {
+        "server": "ia-ivc-mt-app03",
+        "servicename": "IA-IVC-MT-APP03-038939T",
+        "pdbname": "DB038939"
+      }
+
+    ]
+  },
+  {
+    "pack": "PILOT",
+    "config": "SA",
+    "master": {
+      "server": "d-ivc-ltst-master01",
+      "servicename": "LTST-MASTER-03-027369T",
+      "pdbname": "DB027369"
+    },
+    "workers": [
+      {
+        "server": "d-ivc-ltst-app01",
+        "servicename": "LTST-APP-01-027381T",
+        "pdbname": "DB027381"
+      },
+      {
+        "server": "d-ivc-ltst-app02",
+        "servicename": "LTST-APP-02-027383T",
+        "pdbname": "DB027383"
+      },
+      {
+        "server": "d-ivc-ltst-app03",
+        "servicename": "LTST-APP-01-027385T",
+        "pdbname": "DB027385"
+      }
+    ]
+  },
+  {
+    "pack": "PILOT",
+    "config": "IA",
+    "master": {
+      "server": "d2-ivc-ltst-master01",
+      "servicename": "D2-LTST-MASTER-01-029894T",
+      "pdbname": "DB029894"
+    },
+    "workers": [
+      {
+        "server": "d2-ivc-ltst-app01",
+        "servicename": "D2-LTST-APP-01-027881T",
+        "pdbname": "DB027881"
+      },
+      {
+        "server": "d2-ivc-ltst-app02",
+        "servicename": "D2-LTST-APP-02-027883T",
+        "pdbname": "DB027883"
+      }
+    ]
+  },
+  {
+    "pack": "LIVE",
+    "config": "SA",
+    "master": {
+      "server": "d-ivc-prev-master01",
+      "servicename": "PREV-MASTER-02-027367T",
+      "pdbname": "DB027367"
+    },
+    "workers": [
+      {
+        "server": "d-ivc-prev-app01",
+        "servicename": "PREV-APP-01-027482T",
+        "pdbname": "DB027482"
+      },
+      {
+        "server": "d-ivc-prev-app02",
+        "servicename": "PREV-APP-02-027484T",
+        "pdbname": "DB027484"
+      },
+      {
+        "server": "d-ivc-prev-app03",
+        "servicename": "PREV-APP-03-027486T",
+        "pdbname": "DB027486"
+      }
+    ]
+  },
+  {
+    "pack": "LIVE",
+    "config": "IA",
+    "master": {
+      "server": "d2-ivc-prev-master01",
+      "servicename": "D2-PREV-MASTER-01-027371T",
+      "pdbname": "DB027371"
+    },
+    "workers": [
+      {
+        "server": "d2-ivc-prev-app01",
+        "servicename": "D2-PREV-APP-01-027885T",
+        "pdbname": "DB027885"
+      },
+      {
+        "server": "d2-ivc-prev-app02",
+        "servicename": "D2-PREV-APP-02-027887T",
+        "pdbname": "DB027887"
+      }
+    ]
+  },
+  {
+    "pack": "DMSLITE",
+    "config": "IA",
+    "master": {
+      "server": "c05drddrv21.dslab.ad.adp.com",
+      "servicename": "C05042252L",
+      "pdbname": "DB030570"
+    },
+    "workers": [
+      {
+        "server": "c05drddrv727.dslab.ad.adp.com",
+        "servicename": "C05042033L",
+        "pdbname": "DB030568"
+      },
+      {
+        "server": "c05drddrv443.dslab.ad.adp.com",
+        "servicename": "C05042496L",
+        "pdbname": "DB030572"
+      }
+    ]
+  }
+]
+
